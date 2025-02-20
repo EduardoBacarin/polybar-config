@@ -9,11 +9,12 @@ do
 
 	if [ "$(playerctl status)" == "Playing" ]
 	then
-		$(polybar-msg hook playpause 2)
+		$(polybar-msg hook playpause 3)
 	fi
 
 	if [ "$(playerctl status)" == "Paused" ]
 	then
-		$(polybar-msg hook playpause 3)
+		$(polybar-msg hook playpause 2)
 	fi
+	$(sleep 1)
 done
