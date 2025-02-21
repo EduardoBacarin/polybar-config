@@ -18,4 +18,5 @@ fi
 
 title=$(playerctl metadata xesam:title)
 artist=$(playerctl metadata xesam:artist)
-echo "Spotify: $title | $artist"
+echo "${title:0:20} - ${artist:0:20}"
+
